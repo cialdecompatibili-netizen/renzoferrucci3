@@ -138,3 +138,7 @@ comune/gemini_foto.py modifica(): prova account 1, 2, 3 (cookies.json, cookies_2
 ## Descrizioni UNIVOCHE (08/11/2026)
 REGOLA: nessun prodotto puo' avere la stessa descrizione breve o la stessa apertura di un altro (SEO + clienti). libreria_comune\rivendita.py: APERTURE (6) + TIPI (pool per tipo, 10-22 frasi per le borse) + testo_sognante(nome, repo) sceglie frasi NON ancora usate nel catalogo. Se un pool finisce aggiungere frasi in TIPI. Controllo duplicati: len(set(descrizione)) == numero prodotti.
 
+
+## REGOLA FERREA: descrizioni univoche (aggiornata 08/11/2026)
+Mai due prodotti con descrizione breve o apertura uguali. Ora e' BLOCCATA nel codice (rivendita.py): aperture = APERTURA_A x APERTURA_B (64 combinazioni), frasi per tipo in TIPI; lo script sceglie solo frasi non usate nel catalogo, esclude il prodotto stesso quando lo rifai (step 2 non cambia i testi). Se i pool finiscono SI FERMA con errore: aggiungere frasi, non riusarle. Guardia finale: breve duplicata = errore, niente pubblicato. VECCHIE = vecchie aperture (solo per riconoscere testi da riscrivere). Controllo manuale: len(set(descrizioni)) == n prodotti.
+
