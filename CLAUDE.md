@@ -130,3 +130,7 @@ Tutto da Desktop Commander sul PC di Mirco, con Python. Il connettore GitHub non
 
 ## Step foto (08/11/2026)
 Ogni prodotto ha _data/catalogo.json > prodotti[].fonte.foto = 'originale' (step 1) o 'lusso' (step 2 Gemini). Quando l'utente dice 'passa allo step 2': python C:\Users\mirco\Desktop\libreria_comune\step2.py --repo renzoferrucci3 [--max N] [--dry-run]. Rifa solo i prodotti 'originale', si ferma se Gemini finisce i crediti (~17 crediti a foto). Query ricerca: --link con --query 'tipo pelle uomo|donna' per il reparto; --nome per forzare il nome se esce storto.
+
+## Gemini: 3 account, switch automatico (08/11/2026)
+comune/gemini_foto.py modifica(): prova account 1, 2, 3 (cookies.json, cookies_2.json, cookies_3.json in gemini_api_test). Per ogni account: salta se gemini_auto\crediti[_N].json dice <20 crediti 5h e reset non passato; se errore o nessuna immagine rinnova i cookie da solo (get_cookies.py N, dal profilo Chrome gia' loggato) e riprova UNA volta; poi passa al successivo. Se tutti falliscono ritorna None e rivendita.py pubblica con la foto originale (fonte.foto resta 'originale', si riprende con step2.py). Se il rinnovo cookie fallisce: login con gemini_auto\loginaccount.bat N, poi get_cookies.py N. 'Permission denied or unauthenticated' = cookie scaduti, NON crediti finiti.
+
