@@ -130,6 +130,17 @@
           "nome": "Leather handbags women"
         }
       }
+    },
+    {
+      "nome": "Borse in pelle uomo",
+      "id": "borse-in-pelle-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Leather handbags men"
+        }
+      }
     }
   ],
   "prodotti": [
