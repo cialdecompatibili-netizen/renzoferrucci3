@@ -727,7 +727,7 @@ tr:hover td{background:#f0f6fc}
         </div>
         <div class="grid2">
           <div class="field"><label>Categoria</label><select id="prod-categoria"><option value="">— Seleziona —</option></select></div>
-          <div class="field"><label>SKU</label><input type="text" id="prod-sku" placeholder="PROD-001"></div>
+          <div class="field"><label>URL prodotto Etsy (per ordinare)</label><input type="url" id="prod-etsy" placeholder="https://www.etsy.com/listing/..."></div>
         </div>
         <div class="field"><label>Tipo prodotto</label><select id="prod-tipo"><option value="fisico">📦 Fisico (richiede indirizzo di spedizione)</option><option value="digitale">💾 Digitale (richiede solo email)</option></select></div>
         <div class="field"><label>Immagine (URL)</label>
@@ -2175,7 +2175,7 @@ let _prodPath=null;
 let _prodLista=[];
 
 function nuovoProdotto(){
-  ['prod-titolo','prod-prezzo','prod-stock','prod-sku','prod-immagine','prod-corpo','prod-description'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});
+  ['prod-titolo','prod-prezzo','prod-stock','prod-etsy','prod-immagine','prod-corpo','prod-description'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});
   document.getElementById('prod-categoria').value='';
   document.getElementById('prod-tipo').value='fisico';
   _prodPath=null;SeoPanel.set('seo-prod',{});
@@ -2251,7 +2251,7 @@ function modificaProdotto(id){
   const set=(k,v)=>{document.getElementById(k).value=v==null?'':v;};
   set('prod-titolo',p.nome);
   set('prod-prezzo',(p.prezzo_centesimi/100).toFixed(2));
-  set('prod-stock',p.stock);set('prod-sku',p.sku);
+  set('prod-stock',p.stock);set('prod-etsy',p.url_etsy);
   set('prod-immagine',p.immagine);
   _riempiSelCat();set('prod-categoria',p.categoria);
   set('prod-tipo',p.tipo||'fisico');
@@ -2276,7 +2276,7 @@ async function pubblicaProdotto(){
   const categoria=document.getElementById('prod-categoria').value;
   if(!categoria)return showMsg('msg-prod','⚠️ Scegli una categoria.','err');
   const tipo=document.getElementById('prod-tipo').value||'fisico';
-  const stock=v('prod-stock'),sku=v('prod-sku'),im=_imgRel(v('prod-immagine'));
+  const stock=v('prod-stock'),etsy=v('prod-etsy'),im=_imgRel(v('prod-immagine'));
   const descr=v('prod-description'),corpo=v('prod-corpo');
   showMsg('msg-prod','⏳ Salvataggio...','');
   try{
@@ -2296,7 +2296,7 @@ async function pubblicaProdotto(){
     p.descrizione_completa=corpo||p.descrizione;
     if(im){const old=p.immagine||'';p.immagine=(old.split('?')[0]===im)?old:im+'?v=1';}
     if(stock)p.stock=stock;else delete p.stock;
-    if(sku)p.sku=sku;else delete p.sku;
+    if(etsy)p.url_etsy=etsy;else delete p.url_etsy;
     if(nuovo){
       await _putFile('_negozio/'+p.id+'.md','Prodotto: '+titolo,_pagProd(p,false));
       if(await _haEn())await _putFile('en/negozio/'+p.id+'.md','Product: '+titolo,_pagProd(p,true));
