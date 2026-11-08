@@ -647,6 +647,23 @@
         "url": "https://www.etsy.com/it/listing/4492718513/borsa-tote-da-donna-in-pelle-intrecciata",
         "acquisto": 119.3
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-a-tracolla-colosseo-in-pelle",
+      "nome": "Borsa a tracolla Colosseo in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 49000,
+      "descrizione": "Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.",
+      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti e una patina che nel tempo racconta la vostra storia. Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.",
+      "immagine": "assets/images/prodotti/borsa-a-tracolla-colosseo-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4351353467/disponibile-borsa-a-tracolla-mila-retro",
+        "acquisto": 160.25
+      }
     }
   ]
 }
