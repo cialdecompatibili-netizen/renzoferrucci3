@@ -152,6 +152,17 @@
           "nome": "Leather shoulder bags men"
         }
       }
+    },
+    {
+      "nome": "Zaini in pelle donna",
+      "id": "zaini-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather backpacks women"
+        }
+      }
     }
   ],
   "prodotti": [
@@ -456,7 +467,8 @@
       },
       "fonte": {
         "url": "https://www.etsy.com/it/listing/4577740617/borsa-shopper-grande-in-vera-pelle-donna",
-        "acquisto": 121.01
+        "acquisto": 121.01,
+        "foto": "lusso"
       }
     },
     {
@@ -474,7 +486,8 @@
       "categoria2": "portapassaporti-in-pelle-uomo",
       "fonte": {
         "url": "https://www.etsy.com/listing/1863311721",
-        "acquisto": 42.78
+        "acquisto": 42.78,
+        "foto": "lusso"
       }
     },
     {
@@ -491,7 +504,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/1655441141/portafoglio-da-donna-in-morbida-pelle",
-        "acquisto": 68.77
+        "acquisto": 68.77,
+        "foto": "lusso"
       }
     },
     {
@@ -508,7 +522,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/829107628/cintura-in-pelle-classica-marrone-casual",
-        "acquisto": 53.3
+        "acquisto": 53.3,
+        "foto": "lusso"
       }
     },
     {
@@ -525,7 +540,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/1808222415/zaino-per-laptop-da-16-pollici-in-pelle",
-        "acquisto": 158.52
+        "acquisto": 158.52,
+        "foto": "lusso"
       }
     },
     {
@@ -543,7 +559,8 @@
       "categoria2": "portachiavi-in-pelle-uomo",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/784367448/portachiavi-in-pelle-collezione-classics",
-        "acquisto": 39.95
+        "acquisto": 39.95,
+        "foto": "lusso"
       }
     },
     {
@@ -561,7 +578,8 @@
       "categoria2": "portachiavi-in-pelle-uomo",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/1518319800/porta-badge-cordino-lungo-in-pelle-corda",
-        "acquisto": 12.35
+        "acquisto": 12.35,
+        "foto": "lusso"
       }
     },
     {
@@ -578,7 +596,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/4492718513/borsa-tote-da-donna-in-pelle-intrecciata",
-        "acquisto": 119.3
+        "acquisto": 119.3,
+        "foto": "originale"
       }
     },
     {
@@ -595,7 +614,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/4351353467/disponibile-borsa-a-tracolla-mila-retro",
-        "acquisto": 160.25
+        "acquisto": 160.25,
+        "foto": "lusso"
       }
     },
     {
@@ -613,7 +633,8 @@
       "categoria2": "borse-in-pelle-uomo",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/902530633/borsa-da-viaggio-in-pelle-con-scomparto",
-        "acquisto": 148.76
+        "acquisto": 148.76,
+        "foto": "originale"
       }
     },
     {
@@ -630,7 +651,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/805486564/borsa-da-lavoro-vintage-in-pelle",
-        "acquisto": 160.09
+        "acquisto": 160.09,
+        "foto": "originale"
       }
     },
     {
@@ -647,7 +669,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/1887807746/borsa-per-laptop-in-pelle-personalizzata",
-        "acquisto": 150.07
+        "acquisto": 150.07,
+        "foto": "originale"
       }
     },
     {
@@ -664,7 +687,8 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/4480078026/ampia-borsa-da-ufficio-borsa-a-tracolla",
-        "acquisto": 151.58
+        "acquisto": 151.58,
+        "foto": "originale"
       }
     },
     {
@@ -682,7 +706,8 @@
       "categoria2": "borse-a-tracolla-in-pelle-uomo",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/4433499270/borsa-a-tracolla-in-pelle-di-bufalo",
-        "acquisto": 83.16
+        "acquisto": 83.16,
+        "foto": "originale"
       }
     },
     {
@@ -699,7 +724,62 @@
       "collezione": "",
       "fonte": {
         "url": "https://www.etsy.com/it/listing/294947823/borsa-in-pelle-cartella-in-pelle-borsa-a",
-        "acquisto": 100.88
+        "acquisto": 100.88,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-vittoria-in-pelle",
+      "nome": "Borsa Vittoria in pelle",
+      "categoria": "borse-in-pelle-uomo",
+      "prezzo_centesimi": 48000,
+      "descrizione": "Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.",
+      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti e una patina che nel tempo racconta la vostra storia. Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.\n\nCaratteristiche e misure\nTasca interna con cerniera, tasca per cellulare\nPelle pieno fiore\nGrande capacità, può contenere iPhone 12 Pro Plus, iPad Pro da 12,9'', iPad Pro da 11'', laptop da 15'', trucchi ecc.\nFilo delicato fatto a mano\nTracolla rimovibile e regolabile\nFerramenta in ottone",
+      "immagine": "assets/images/prodotti/borsa-vittoria-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/841622531/borsa-da-viaggio-personalizzata-per-uomo",
+        "acquisto": 158.42,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-pantheon-in-pelle",
+      "nome": "Borsa Pantheon in pelle",
+      "categoria": "borse-in-pelle-uomo",
+      "prezzo_centesimi": 23000,
+      "descrizione": "Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.",
+      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti e una patina che nel tempo racconta la vostra storia. Una borsa che non si mostra, si lascia scoprire: il gesto con cui la apri diventa un piccolo rito quotidiano.",
+      "immagine": "assets/images/prodotti/borsa-pantheon-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4555055447/borsa-da-viaggio-in-pelle-personalizzata",
+        "acquisto": 74.15,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "grande-margutta-in-pelle",
+      "nome": "Grande Margutta in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 75000,
+      "descrizione": "Un dettaglio che fa la differenza: piccolo, essenziale, scelto da chi riconosce la bellezza nelle cose di ogni giorno.",
+      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti e una patina che nel tempo racconta la vostra storia. Un dettaglio che fa la differenza: piccolo, essenziale, scelto da chi riconosce la bellezza nelle cose di ogni giorno.",
+      "immagine": "assets/images/prodotti/grande-margutta-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4536547465/borsa-a-mano-grande-in-pelle-da-donna",
+        "acquisto": 242.1,
+        "foto": "originale"
       }
     }
   ]
