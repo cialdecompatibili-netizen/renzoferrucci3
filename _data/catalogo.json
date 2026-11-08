@@ -594,6 +594,24 @@
         "url": "https://www.etsy.com/it/listing/1808222415/zaino-per-laptop-da-16-pollici-in-pelle",
         "acquisto": 158.52
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "portachiavi-viminale-in-pelle",
+      "nome": "Portachiavi Viminale in pelle",
+      "categoria": "portachiavi-in-pelle",
+      "prezzo_centesimi": 12000,
+      "descrizione": "Amerete questo portachiavi! La pelle di alta qualità e la splendida fattura lo rendono un oggetto che toccherete e userete ogni giorno.",
+      "descrizione_completa": "Amerete questo portachiavi! La pelle di alta qualità e la splendida fattura lo rendono un oggetto che toccherete e userete ogni giorno. Questo portachiavi è facile da impugnare e vi durerà a lungo.",
+      "immagine": "assets/images/prodotti/portachiavi-viminale-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "categoria2": "portachiavi-in-pelle-uomo",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/784367448/portachiavi-in-pelle-collezione-classics",
+        "acquisto": 39.95
+      }
     }
   ]
 }
