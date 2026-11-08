@@ -13,7 +13,7 @@ classes: wide
 .cat-header{margin-bottom:1.6em}
 .cat-header-name{font-family:'Playfair Display',Georgia,serif;font-size:2em;font-weight:500;color:#141414;margin:0 0 .3em}
 .cat-header-desc{font-size:15px;color:#6b665f;margin:0;line-height:1.6;max-width:62ch}
-.cat-back{font-size:13px;color:#0e7490;text-decoration:none;display:inline-block;margin-bottom:1.2em}
+.cat-back{font-size:13px;color:#8a6d3b;text-decoration:none;display:inline-block;margin-bottom:1.2em}
 .cat-back:hover{text-decoration:underline}
 .art-list{display:flex;flex-direction:column;gap:1.1rem}
 .art-row{display:grid;grid-template-columns:clamp(220px,34%,320px) 1fr;background:#fff;border:1px solid #e9e3d9;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,box-shadow .2s}

@@ -727,7 +727,7 @@ tr:hover td{background:#f0f6fc}
         </div>
         <div class="grid2">
           <div class="field"><label>Categoria</label><select id="prod-categoria"><option value="">— Seleziona —</option></select></div>
-          <div class="field"><label>URL prodotto Etsy (per ordinare)</label><input type="url" id="prod-etsy" placeholder="https://www.etsy.com/listing/..."></div>
+          <div class="field"><label>URL Etsy per ordinare (privato, non compare sul sito)</label><input type="url" id="prod-etsy" placeholder="https://www.etsy.com/listing/..."></div>
         </div>
         <div class="field"><label>Tipo prodotto</label><select id="prod-tipo"><option value="fisico">📦 Fisico (richiede indirizzo di spedizione)</option><option value="digitale">💾 Digitale (richiede solo email)</option></select></div>
         <div class="field"><label>Immagine (URL)</label>
@@ -2251,7 +2251,7 @@ function modificaProdotto(id){
   const set=(k,v)=>{document.getElementById(k).value=v==null?'':v;};
   set('prod-titolo',p.nome);
   set('prod-prezzo',(p.prezzo_centesimi/100).toFixed(2));
-  set('prod-stock',p.stock);set('prod-etsy',p.url_etsy);
+  set('prod-stock',p.stock);set('prod-etsy',(p.fonte||{}).url);
   set('prod-immagine',p.immagine);
   _riempiSelCat();set('prod-categoria',p.categoria);
   set('prod-tipo',p.tipo||'fisico');
@@ -2296,7 +2296,7 @@ async function pubblicaProdotto(){
     p.descrizione_completa=corpo||p.descrizione;
     if(im){const old=p.immagine||'';p.immagine=(old.split('?')[0]===im)?old:im+'?v=1';}
     if(stock)p.stock=stock;else delete p.stock;
-    if(etsy)p.url_etsy=etsy;else delete p.url_etsy;
+    if(etsy)p.fonte=Object.assign({},p.fonte||{},{url:etsy});else if(p.fonte)delete p.fonte.url;
     if(nuovo){
       await _putFile('_negozio/'+p.id+'.md','Prodotto: '+titolo,_pagProd(p,false));
       if(await _haEn())await _putFile('en/negozio/'+p.id+'.md','Product: '+titolo,_pagProd(p,true));
