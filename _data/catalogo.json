@@ -612,6 +612,24 @@
         "url": "https://www.etsy.com/it/listing/784367448/portachiavi-in-pelle-collezione-classics",
         "acquisto": 39.95
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "porta-badge-aventino-in-pelle",
+      "nome": "Porta badge Aventino in pelle",
+      "categoria": "portachiavi-in-pelle",
+      "prezzo_centesimi": 4000,
+      "descrizione": "Porta badge, cordino lungo in pelle, corda rotonda in pelle con portachiavi, portachiavi con collana, per lui o per lei.",
+      "descrizione_completa": "Porta badge, cordino lungo in pelle, corda rotonda in pelle con portachiavi, portachiavi con collana, per lui o per lei",
+      "immagine": "assets/images/prodotti/porta-badge-aventino-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "categoria2": "portachiavi-in-pelle-uomo",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/1518319800/porta-badge-cordino-lungo-in-pelle-corda",
+        "acquisto": 12.35
+      }
     }
   ]
 }
