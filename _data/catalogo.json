@@ -119,6 +119,17 @@
           "nome": "Leather Key rings men"
         }
       }
+    },
+    {
+      "nome": "Borse in pelle donna",
+      "id": "borse-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather handbags women"
+        }
+      }
     }
   ],
   "prodotti": [
