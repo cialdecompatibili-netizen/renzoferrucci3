@@ -134,3 +134,7 @@ Ogni prodotto ha _data/catalogo.json > prodotti[].fonte.foto = 'originale' (step
 ## Gemini: 3 account, switch automatico (08/11/2026)
 comune/gemini_foto.py modifica(): prova account 1, 2, 3 (cookies.json, cookies_2.json, cookies_3.json in gemini_api_test). Per ogni account: salta se gemini_auto\crediti[_N].json dice <20 crediti 5h e reset non passato; se errore o nessuna immagine rinnova i cookie da solo (get_cookies.py N, dal profilo Chrome gia' loggato) e riprova UNA volta; poi passa al successivo. Se tutti falliscono ritorna None e rivendita.py pubblica con la foto originale (fonte.foto resta 'originale', si riprende con step2.py). Se il rinnovo cookie fallisce: login con gemini_auto\loginaccount.bat N, poi get_cookies.py N. 'Permission denied or unauthenticated' = cookie scaduti, NON crediti finiti.
 
+
+## Descrizioni UNIVOCHE (08/11/2026)
+REGOLA: nessun prodotto puo' avere la stessa descrizione breve o la stessa apertura di un altro (SEO + clienti). libreria_comune\rivendita.py: APERTURE (6) + TIPI (pool per tipo, 10-22 frasi per le borse) + testo_sognante(nome, repo) sceglie frasi NON ancora usate nel catalogo. Se un pool finisce aggiungere frasi in TIPI. Controllo duplicati: len(set(descrizione)) == numero prodotti.
+
