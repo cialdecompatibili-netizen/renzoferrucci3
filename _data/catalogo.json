@@ -108,6 +108,17 @@
           "nome": "Leather Key rings women"
         }
       }
+    },
+    {
+      "nome": "Portachiavi in pelle uomo",
+      "id": "portachiavi-in-pelle-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Leather Key rings men"
+        }
+      }
     }
   ],
   "prodotti": [
