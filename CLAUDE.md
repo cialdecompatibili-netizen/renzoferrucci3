@@ -127,3 +127,6 @@ Tutto da Desktop Commander sul PC di Mirco, con Python. Il connettore GitHub non
 - Si ferma se la repo ha modifiche non committate (foto_sito fa `git add -A`): committarle o usare `--forza`. Se la foto manca non pubblica nulla e lo dice. Opzioni: `--no-foto`, `--no-push`, `--no-api` (watcher Chrome).
 - La foto va online subito: guardarla DOPO su `assets/images/prodotti/<id>.webp` o sul sito e rifarla con `foto_sito.py --repo . --ids <id> --extra "..."` se non va. Dare a Mirco solo l'URL online della categoria e del prodotto.
 - Copia del template: l'originale e' `Desktop\gemini_auto\core\prodotto.py`; se si corregge uno, allineare l'altro.
+
+## Step foto (08/11/2026)
+Ogni prodotto ha _data/catalogo.json > prodotti[].fonte.foto = 'originale' (step 1) o 'lusso' (step 2 Gemini). Quando l'utente dice 'passa allo step 2': python C:\Users\mirco\Desktop\libreria_comune\step2.py --repo renzoferrucci3 [--max N] [--dry-run]. Rifa solo i prodotti 'originale', si ferma se Gemini finisce i crediti (~17 crediti a foto). Query ricerca: --link con --query 'tipo pelle uomo|donna' per il reparto; --nome per forzare il nome se esce storto.
