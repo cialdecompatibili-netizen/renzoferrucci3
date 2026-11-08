@@ -97,6 +97,17 @@
           "nome": "Leather backpacks men"
         }
       }
+    },
+    {
+      "nome": "Portachiavi in pelle donna",
+      "id": "portachiavi-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather Key rings women"
+        }
+      }
     }
   ],
   "prodotti": [
