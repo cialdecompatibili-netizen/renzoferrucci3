@@ -1,10 +1,11 @@
 ---
 ref: blog
 layout: single
-title: Blog
+title: Journal
 permalink: /blog/
 author_profile: false
 classes: wide
 share: false
 ---
-{% include lista-categoria.html %}
+{%- assign posts_l = site.posts | where: "lang", page.lang -%}
+{%- include blog-lista.html -%}

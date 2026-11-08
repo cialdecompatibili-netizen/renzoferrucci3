@@ -1,8 +1,7 @@
-# Riquadro "foto + presentazione" in cima alla barra laterale degli articoli.
-# Compare solo se "foto" e' compilata. Esempio:
-#   foto: /assets/images/chi-siamo.jpg
-#   titolo: "Nome Sito"
-#   testo: "Una frase che presenta il sito."
+# Riquadro testo nella barra laterale degli articoli (sotto "Cerca"). Foto opzionale.
+# Il bottone verso il catalogo e' automatico (URL giusto per lingua).
 foto: ""
-titolo: ""
-testo: ""
+titolo: "Immagina di indossarlo già."
+testo: "Tessuti italiani, tagli sartoriali, cuciti a Roma. Il capo giusto per te esiste già: lo riconoscerai appena lo vedi."
+titolo_en: "Picture yourself already wearing it."
+testo_en: "Italian fabrics, tailored cuts, sewn in Rome. The right piece for you already exists: you will know it the moment you see it."

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Blog
+title: Journal
 author_profile: false
 classes: wide
 share: false
@@ -8,7 +8,8 @@ ref: blog
 lang: en
 locale: en
 tr: tradotto
-tr_hash: e2f087
+tr_hash: 1lpeq32
 permalink: /en/blog/
 ---
-{% include lista-categoria.html %}
+{%- assign posts_l = site.posts | where: "lang", page.lang -%}
+{%- include blog-lista.html -%}
